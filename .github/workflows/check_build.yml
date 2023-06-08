@@ -1,0 +1,14 @@
+language: cpp
+dist: bionic
+compiler: gcc
+
+script: 
+  # Build
+  - qmake
+  - make --silent release
+  # Run
+  - ./travis_qmake_gcc_cpp17_gprof
+  # produce the gprof log
+  - gprof travis_qmake_gcc_cpp17_gprof > gprof.log
+  # Read the 100 top lines
+  - head gprof.log -n 100
