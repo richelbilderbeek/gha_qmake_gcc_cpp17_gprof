@@ -18,14 +18,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Search deps qmake
-        run: sudo apt-cache search qmake
-
-      - name: Search deps for gprof
-        run: sudo apt-cache search gprof
-
       - name: Install deps
-        run: sudo apt-get install qmake6 make gprof g++
+        run: sudo apt-get install qmake6 make g++
 
       - name: Run qmake
         run: qmake
