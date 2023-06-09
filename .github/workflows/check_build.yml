@@ -31,7 +31,7 @@ jobs:
         run: qtchooser -qt=qt6
 
       - name: Run qmake
-        run: qmake
+        run: qmake6
 
       - name: Run make
         run: make --silent release
