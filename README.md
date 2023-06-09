@@ -18,6 +18,7 @@ More complex builds:
  * [none]
 
  * Use Travis CI (instead of GitHub Actions): [travis_qmake_gcc_cpp17_gprof](https://github.com/richelbilderbeek/travis_qmake_gcc_cpp17_gprof)
+ * Use CMake (instead of `qmake`): [gha_cmake_gcc_cpp17_gprof](https://github.com/richelbilderbeek/gha_cmake_gcc_cpp17_gprof)
 
 Less complex builds:
  * [none]
