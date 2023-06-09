@@ -40,10 +40,10 @@ jobs:
         run: make --silent release
 
       - name: Run the program
-        run: ./travis_qmake_gcc_cpp17_gprof
+        run: ./gha_qmake_gcc_cpp17_gprof
 
       - name: Produce the gprof log
-        run: gprof travis_qmake_gcc_cpp17_gprof > gprof.log
+        run: gprof gha_qmake_gcc_cpp17_gprof > gprof.log
 
       - name: Read the 100 top lines
         run: head gprof.log -n 100
