@@ -24,8 +24,11 @@ jobs:
       - name: Use Qt6, from https://askubuntu.com/a/1460243
         run: qtchooser -install qt6 $(which qmake6)
 
-      - name: Show Qt versions, fails according to https://askubuntu.com/a/1460243
+      - name: Show Qt versions
         run: qtchooser -list-versions
+
+      - name: Pick Qt6, fails according to https://askubuntu.com/a/1460243
+        run: qtchooser -qt=qt6
 
       - name: Run qmake
         run: qmake
