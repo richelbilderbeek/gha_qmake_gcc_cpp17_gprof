@@ -30,6 +30,9 @@ jobs:
       - name: Pick Qt6, fails according to https://askubuntu.com/a/1460243
         run: qtchooser -qt=qt6
 
+      - name: Install more deps
+        run: sudo apt-get install qt6-base-dev
+
       - name: Run qmake
         run: qmake6
 
