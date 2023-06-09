@@ -17,6 +17,8 @@ The goal of this project is to have a clean GitHub Actions build, with specs:
 More complex builds:
  * [none]
 
+Equally complex builds:
+
  * Use Travis CI (instead of GitHub Actions): [travis_qmake_gcc_cpp17_gprof](https://github.com/richelbilderbeek/travis_qmake_gcc_cpp17_gprof)
  * Use CMake (instead of `qmake`): [gha_cmake_gcc_cpp17_gprof](https://github.com/richelbilderbeek/gha_cmake_gcc_cpp17_gprof)
 
