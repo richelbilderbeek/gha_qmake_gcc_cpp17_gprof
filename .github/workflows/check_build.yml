@@ -48,3 +48,5 @@ jobs:
       - name: Read the 100 top lines
         run: head gprof.log -n 100
 
+      - name: Get g++ version
+        run: g++ --version

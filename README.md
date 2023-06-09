@@ -1,4 +1,4 @@
-# travis_qmake_gcc_cpp17_gprof
+# gha_qmake_gcc_cpp17_gprof
 
 Branch   |[![GitHub Actions logo](pics/GitHubActions.png)](https://github.com/richelbilderbeek/gha_qmake_gcc_cpp17_gprof/actions)
 ---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
