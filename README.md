@@ -20,7 +20,7 @@ More complex builds:
 Equally complex builds:
 
  * Use Travis CI (instead of GitHub Actions): [travis_qmake_gcc_cpp17_gprof](https://github.com/richelbilderbeek/travis_qmake_gcc_cpp17_gprof)
- * Use CMake (instead of `qmake`): [gha_cmake_gcc_cpp17_gprof](https://github.com/richelbilderbeek/gha_cmake_gcc_cpp17_gprof)
+ * Use CMake (instead of `qmake`): [gha_cmake_gcc_cpp17_gprof](h[![Check build](https://github.com/richelbilderbeek/gha_qmake_gcc_cpp17_gprof/actions/workflows/check_build.yml/badge.svg?branch=main)](https://github.com/richelbilderbeek/gha_qmake_gcc_cpp17_gprof/actions/workflows/check_build.yml)ttps://github.com/richelbilderbeek/gha_cmake_gcc_cpp17_gprof)
 
 Less complex builds:
  * [none]
