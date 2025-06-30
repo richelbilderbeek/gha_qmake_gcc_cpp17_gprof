@@ -16,25 +16,31 @@ jobs:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
-      - name: Install deps
-        run: sudo apt-get install qmake6 qtchooser
+      - name: Install Qt
+        uses: jurplel/install-qt-action@v4
 
-      - name: Use Qt6, from https://askubuntu.com/a/1460243
-        run: qtchooser -install qt6 $(which qmake6)
+      #- name: Install deps
+      #  run: sudo apt-get install qmake6 qtchooser
 
-      - name: Show Qt versions
-        run: qtchooser -list-versions
+      #- name: Use Qt6, from https://askubuntu.com/a/1460243
+      #  run: qtchooser -install qt6 $(which qmake6)
 
-      - name: Pick Qt6, fails according to https://askubuntu.com/a/1460243
-        run: qtchooser -qt=qt6
+      #- name: Show Qt versions
+      #  run: qtchooser -list-versions
 
-      - name: Install more deps
-        run: sudo apt-get install qt6-base-dev
+      #- name: Pick Qt6, fails according to https://askubuntu.com/a/1460243
+      #  run: qtchooser -qt=qt6
+
+      #- name: Install more deps
+      #  run: sudo apt-get install qt6-base-dev
+
+      #- name: Run qmake
+      #  run: qmake6
 
       - name: Run qmake
-        run: qmake6
+        run: qmake
 
       - name: Run make
         run: make --silent release
